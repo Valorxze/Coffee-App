@@ -3,7 +3,7 @@ import menu, { categories } from "../data/menu";
 import MenuCard from "./MenuCard";
 import "./Menus.css";
 
-export default function Menu({ cart, onAdd, onRemove }) {
+export default function Menu() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const allCategories = ["All", ...categories];
@@ -33,18 +33,9 @@ export default function Menu({ cart, onAdd, onRemove }) {
         </div>
 
         <div className="menu-grid">
-          {filtered.map((item) => {
-            const cartItem = cart.find((i) => i.id === item.id);
-            return (
-              <MenuCard
-                key={item.id}
-                item={item}
-                qty={cartItem?.qty || 0}
-                onAdd={() => onAdd(item)}
-                onRemove={() => onRemove(item.id)}
-              />
-            );
-          })}
+          {filtered.map((item) => (
+            <MenuCard key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </section>

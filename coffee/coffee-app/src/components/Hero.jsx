@@ -6,20 +6,26 @@ export default function Hero() {
       <div className="hero-bg">
         <div className="blob blob-1" />
         <div className="blob blob-2" />
+        <div className="blob blob-3" />
         <div className="grain" />
+        <div className="petal-ring ring-1" />
+        <div className="petal-ring ring-2" />
       </div>
       <div className="hero-content">
         <p className="hero-eyebrow">Est. 2019 · Downey, CA</p>
         <h1 className="hero-title">
-          <em>Coffee worth slowing down for.</em>
+          Coffee worth<br />
+          <em>slowing down for.</em>
         </h1>
         <p className="hero-sub">
           Every cup starts with a story — sourced from family farms,<br />
           roasted in small batches, brewed with intention.
         </p>
-        <a href="#menu" className="hero-cta">Explore the Menu</a>
+        <div className="hero-actions">
+          <a href="#menu" className="hero-cta hero-cta--primary">Explore the Menu</a>
+          <a href="#our-story" className="hero-cta hero-cta--ghost">Our Story</a>
+        </div>
       </div>
-      <div className="hero-ring" />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 .menu-section {
   padding: 6rem 2rem;
-  background: var(--steam);
+  background: linear-gradient(180deg, #fdf6f0 0%, #fde8f0 100%);
   position: relative;
 }
 
@@ -9,13 +9,10 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--parchment), transparent);
+  background: linear-gradient(90deg, transparent, var(--rose), transparent);
 }
 
-.menu-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.menu-inner { max-width: 1200px; margin: 0 auto; }
 
 .menu-header {
   text-align: center;
@@ -26,14 +23,14 @@
   font-size: 0.72rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--latte);
+  color: var(--petal);
   font-weight: 500;
   margin-bottom: 0.75rem;
 }
 
 .section-title {
   font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--espresso);
+  color: var(--deep-rose);
   font-weight: 700;
 }
 
@@ -47,9 +44,9 @@
 
 .filter-btn {
   background: transparent;
-  border: 1.5px solid var(--parchment);
+  border: 1.5px solid var(--rose);
   color: var(--bark);
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1.3rem;
   border-radius: 2rem;
   font-size: 0.85rem;
   font-weight: 500;
@@ -57,14 +54,16 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--latte);
-  color: var(--espresso);
+  border-color: var(--petal);
+  color: var(--fuchsia);
+  background: var(--blush);
 }
 
 .filter-btn.active {
-  background: var(--espresso);
-  border-color: var(--espresso);
-  color: var(--cream);
+  background: var(--fuchsia);
+  border-color: var(--fuchsia);
+  color: white;
+  box-shadow: 0 3px 14px rgba(214,63,130,0.3);
 }
 
 .menu-grid {

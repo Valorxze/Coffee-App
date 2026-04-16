@@ -1,29 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root {
-  --cream: #f5efe6;
-  --parchment: #ede0ce;
-  --latte: #c9a97a;
-  --espresso: #3b1f0e;
-  --bark: #6b3e26;
-  --steam: #f9f4ef;
-  --ink: #1c1008;
-  --mist: rgba(59,31,14,0.07);
-  --shadow: 0 8px 40px rgba(59,31,14,0.13);
+  /* Pink-forward palette */
+  --blush:      #fde8f0;
+  --rose:       #f7c4d8;
+  --petal:      #ef8fb8;
+  --fuchsia:    #d63f82;
+  --deep-rose:  #9b1f55;
+
+  /* Warm neutrals */
+  --cream:      #fdf6f0;
+  --parchment:  #f5e6e0;
+  --espresso:   #2d1018;
+  --bark:       #6b2e44;
+  --ink:        #1c0810;
+
+  /* Utility */
+  --shadow:     0 8px 40px rgba(214,63,130,0.15);
+  --card-bg:    rgba(255,255,255,0.85);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
+  background: var(--blush);
   color: var(--ink);
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-h1, h2, h3 { font-family: 'Playfair Display', serif; }
-
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 button { cursor: pointer; font-family: inherit; }
+a { color: inherit; }
